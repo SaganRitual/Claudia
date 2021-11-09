@@ -24,6 +24,9 @@
 		D43E4844273AAB8B004031EE /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = D43E4840273AAB8B004031EE /* .swiftlint.yml */; };
 		D43E4845273AAB8B004031EE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D43E4841273AAB8B004031EE /* .gitignore */; };
 		D43E4846273AAB8B004031EE /* swiftlint.sh in Resources */ = {isa = PBXBuildFile; fileRef = D43E4842273AAB8B004031EE /* swiftlint.sh */; };
+		D43E484A273AAD10004031EE /* AppSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E4849273AAD10004031EE /* AppSettingsView.swift */; };
+		D43E484D273AAD30004031EE /* SettingsToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E484B273AAD30004031EE /* SettingsToggleView.swift */; };
+		D43E484E273AAD30004031EE /* SettingsSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E484C273AAD30004031EE /* SettingsSliderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		D43E4840273AAB8B004031EE /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		D43E4841273AAB8B004031EE /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		D43E4842273AAB8B004031EE /* swiftlint.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = swiftlint.sh; sourceTree = "<group>"; };
+		D43E4849273AAD10004031EE /* AppSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettingsView.swift; sourceTree = "<group>"; };
+		D43E484B273AAD30004031EE /* SettingsToggleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsToggleView.swift; sourceTree = "<group>"; };
+		D43E484C273AAD30004031EE /* SettingsSliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsSliderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,9 +131,12 @@
 		D43E4848273AABBA004031EE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D43E4849273AAD10004031EE /* AppSettingsView.swift */,
 				D43E482C273A5215004031EE /* ArenaView.swift */,
 				D43E481D273A5085004031EE /* ContentView.swift */,
 				D43E4832273A862A004031EE /* LayerView.swift */,
+				D43E484C273AAD30004031EE /* SettingsSliderView.swift */,
+				D43E484B273AAD30004031EE /* SettingsToggleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D43E4833273A862A004031EE /* LayerView.swift in Sources */,
+				D43E484A273AAD10004031EE /* AppSettingsView.swift in Sources */,
 				D43E483C273AAB80004031EE /* Extensions.swift in Sources */,
 				D43E482D273A5215004031EE /* ArenaView.swift in Sources */,
 				D43E483B273AAB80004031EE /* Deque.swift in Sources */,
@@ -215,7 +225,9 @@
 				D43E483D273AAB80004031EE /* Overload2D.swift in Sources */,
 				D43E4831273A55D3004031EE /* Layer.swift in Sources */,
 				D43E481C273A5085004031EE /* ClaudiaApp.swift in Sources */,
+				D43E484D273AAD30004031EE /* SettingsToggleView.swift in Sources */,
 				D43E482B273A50F5004031EE /* ArenaScene.swift in Sources */,
+				D43E484E273AAD30004031EE /* SettingsSliderView.swift in Sources */,
 				D43E483A273AAB80004031EE /* GridPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

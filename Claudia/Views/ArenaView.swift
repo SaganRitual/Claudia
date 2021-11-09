@@ -4,16 +4,16 @@ import SpriteKit
 import SwiftUI
 
 struct ArenaView: View {
-    @StateObject var scene = ArenaScene()
+    @EnvironmentObject var arenaScene: ArenaScene
 
     var body: some View {
         ZStack {
-            SpriteView(scene: scene)
+            SpriteView(scene: arenaScene)
                 .scaledToFit()
 
-            ForEach(0..<scene.cLayers) { layerIx in
+            ForEach(0..<arenaScene.cLayers) { layerIx in
                 LayerView()
-                    .environmentObject(scene.getLayer(layerIx))
+                    .environmentObject(arenaScene.getLayer(layerIx))
             }
         }
     }

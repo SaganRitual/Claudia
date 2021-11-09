@@ -4,8 +4,14 @@ import SpriteKit
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var arenaScene = ArenaScene()
+    
     var body: some View {
-        ArenaView()
+        HStack {
+            AppSettingsView()
+            ArenaView()
+        }
+        .environmentObject(arenaScene)
     }
 }
 

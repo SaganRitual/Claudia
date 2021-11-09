@@ -1,10 +1,17 @@
 // We are a way for the cosmos to know itself. -- C. Sagan
 
+import Combine
 import SpriteKit
+import SwiftUI
 
 class ArenaScene: SKScene, ObservableObject {
     @Published var cLayers = 5
     @Published var layers = [Layer]()
+
+    @Published var ring0SpinPeriod = 0.0
+    @Published var ring1OrbitalPeriod = 1.0
+    @Published var simulationSpeed = 1.0
+    @Published var zoomLevel = 1.0
 
     @Published var radiusFractions: [Double] = [
         0.95, 0.5, 0.5, 0.5, 0.5
