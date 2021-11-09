@@ -10,10 +10,6 @@ struct AppSettingsView: View {
     @State var simulationSpeed = 1.0
     @State var zoomLevel = 1.0
 
-    @State var radiusFractions: [Double] = [
-        0.95, 0.5, 0.5, 0.5, 0.5
-    ]
-
     var body: some View {
         VStack {
             HStack {
@@ -50,7 +46,7 @@ struct AppSettingsView: View {
                 SettingsSliderView(label: "Zoom", range: 0.1...10, value: $zoomLevel)
                     .padding(.trailing, 10)
                     .onChange(of: zoomLevel) { newValue in
-                        arenaScene.layers[0].ring.setScale(zoomLevel)
+                        arenaScene.layers[0].ring.setScale(sqrt(zoomLevel))
                     }
 
                 Text("\(zoomLevel.asString(decimals: 2))")

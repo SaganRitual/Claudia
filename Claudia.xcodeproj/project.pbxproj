@@ -27,6 +27,10 @@
 		D43E484A273AAD10004031EE /* AppSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E4849273AAD10004031EE /* AppSettingsView.swift */; };
 		D43E484D273AAD30004031EE /* SettingsToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E484B273AAD30004031EE /* SettingsToggleView.swift */; };
 		D43E484E273AAD30004031EE /* SettingsSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E484C273AAD30004031EE /* SettingsSliderView.swift */; };
+		D43E4856273AFEDA004031EE /* LayerSettingsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E4852273AFEDA004031EE /* LayerSettingsListView.swift */; };
+		D43E4857273AFEDA004031EE /* LayerSlidersGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E4853273AFEDA004031EE /* LayerSlidersGroupView.swift */; };
+		D43E4858273AFEDA004031EE /* LayerToggleGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E4854273AFEDA004031EE /* LayerToggleGroupView.swift */; };
+		D43E4859273AFEDA004031EE /* LayerSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E4855273AFEDA004031EE /* LayerSettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,10 @@
 		D43E4849273AAD10004031EE /* AppSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettingsView.swift; sourceTree = "<group>"; };
 		D43E484B273AAD30004031EE /* SettingsToggleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsToggleView.swift; sourceTree = "<group>"; };
 		D43E484C273AAD30004031EE /* SettingsSliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsSliderView.swift; sourceTree = "<group>"; };
+		D43E4852273AFEDA004031EE /* LayerSettingsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerSettingsListView.swift; sourceTree = "<group>"; };
+		D43E4853273AFEDA004031EE /* LayerSlidersGroupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerSlidersGroupView.swift; sourceTree = "<group>"; };
+		D43E4854273AFEDA004031EE /* LayerToggleGroupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerToggleGroupView.swift; sourceTree = "<group>"; };
+		D43E4855273AFEDA004031EE /* LayerSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerSettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +142,10 @@
 				D43E4849273AAD10004031EE /* AppSettingsView.swift */,
 				D43E482C273A5215004031EE /* ArenaView.swift */,
 				D43E481D273A5085004031EE /* ContentView.swift */,
+				D43E4852273AFEDA004031EE /* LayerSettingsListView.swift */,
+				D43E4855273AFEDA004031EE /* LayerSettingsView.swift */,
+				D43E4853273AFEDA004031EE /* LayerSlidersGroupView.swift */,
+				D43E4854273AFEDA004031EE /* LayerToggleGroupView.swift */,
 				D43E4832273A862A004031EE /* LayerView.swift */,
 				D43E484C273AAD30004031EE /* SettingsSliderView.swift */,
 				D43E484B273AAD30004031EE /* SettingsToggleView.swift */,
@@ -215,8 +227,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D43E4856273AFEDA004031EE /* LayerSettingsListView.swift in Sources */,
+				D43E4857273AFEDA004031EE /* LayerSlidersGroupView.swift in Sources */,
 				D43E4833273A862A004031EE /* LayerView.swift in Sources */,
+				D43E4859273AFEDA004031EE /* LayerSettingsView.swift in Sources */,
 				D43E484A273AAD10004031EE /* AppSettingsView.swift in Sources */,
+				D43E4858273AFEDA004031EE /* LayerToggleGroupView.swift in Sources */,
 				D43E483C273AAB80004031EE /* Extensions.swift in Sources */,
 				D43E482D273A5215004031EE /* ArenaView.swift in Sources */,
 				D43E483B273AAB80004031EE /* Deque.swift in Sources */,

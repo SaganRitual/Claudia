@@ -8,7 +8,10 @@ struct ContentView: View {
     
     var body: some View {
         HStack {
-            AppSettingsView()
+            VStack {
+                AppSettingsView()
+                LayerSettingsListView()
+            }
             ArenaView()
         }
         .environmentObject(arenaScene)

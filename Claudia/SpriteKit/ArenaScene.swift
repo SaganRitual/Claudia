@@ -12,6 +12,10 @@ class ArenaScene: SKScene, ObservableObject {
         .cyan, .magenta, .yellow, .red, .green
     ]
 
+    private let initialRadiusFractions: [Double] = [
+        0.95, 0.5, 0.5, 0.5, 0.5
+    ]
+
     override init() {
         super.init(size: ClaudiaApp.screenDimensions)
         anchorPoint = CGPoint(x: 0.5, y: 0.5)
@@ -26,7 +30,7 @@ class ArenaScene: SKScene, ObservableObject {
             Layer(
                 parentSKNode: layers.last?.ring ?? self,
                 color: colors[layers.count],
-                radius: 1//radiusFractions[layers.count]
+                radiusFraction: initialRadiusFractions[layers.count]
             )
         )
 
