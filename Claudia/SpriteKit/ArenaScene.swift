@@ -8,15 +8,6 @@ class ArenaScene: SKScene, ObservableObject {
     @Published var cLayers = 5
     @Published var layers = [Layer]()
 
-    @Published var ring0SpinPeriod = 0.0
-    @Published var ring1OrbitalPeriod = 1.0
-    @Published var simulationSpeed = 1.0
-    @Published var zoomLevel = 1.0
-
-    @Published var radiusFractions: [Double] = [
-        0.95, 0.5, 0.5, 0.5, 0.5
-    ]
-
     private let colors: [SKColor] = [
         .cyan, .magenta, .yellow, .red, .green
     ]
@@ -35,7 +26,7 @@ class ArenaScene: SKScene, ObservableObject {
             Layer(
                 parentSKNode: layers.last?.ring ?? self,
                 color: colors[layers.count],
-                radius: radiusFractions[layers.count]
+                radius: 1//radiusFractions[layers.count]
             )
         )
 

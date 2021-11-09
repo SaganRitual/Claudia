@@ -8,19 +8,17 @@ struct SettingsSliderView: View {
 
     @Binding var value: Double
 
+    let pub = NotificationCenter.default
+                .publisher(for: NSNotification.Name("ringRadius"))
+
     var body: some View {
         HStack {
             Text(label)
                 .frame(width: 100, height: nil, alignment: .leading)
                 .padding(.leading)
 
-            Slider(
-                value: $value,
-                in: range
-            ) {
-                print("Is editing \($0); value = \(value)")
-            }
-                .padding(.trailing, 10)
+            Slider(value: $value, in: range)
+            .padding(.trailing, 10)
         }
     }
 }
