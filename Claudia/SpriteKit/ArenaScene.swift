@@ -7,7 +7,7 @@ class ArenaScene: SKScene, ObservableObject {
     @Published var layers = [Layer]()
 
     @Published var radiusFractions: [Double] = [
-        1.0, 0.5, 0.5, 0.5, 0.5
+        0.95, 0.5, 0.5, 0.5, 0.5
     ]
 
     private let colors: [SKColor] = [

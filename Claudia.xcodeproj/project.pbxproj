@@ -15,6 +15,15 @@
 		D43E482D273A5215004031EE /* ArenaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E482C273A5215004031EE /* ArenaView.swift */; };
 		D43E4831273A55D3004031EE /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E4830273A55D3004031EE /* Layer.swift */; };
 		D43E4833273A862A004031EE /* LayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E4832273A862A004031EE /* LayerView.swift */; };
+		D43E483A273AAB80004031EE /* GridPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E4835273AAB80004031EE /* GridPoint.swift */; };
+		D43E483B273AAB80004031EE /* Deque.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E4836273AAB80004031EE /* Deque.swift */; };
+		D43E483C273AAB80004031EE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E4837273AAB80004031EE /* Extensions.swift */; };
+		D43E483D273AAB80004031EE /* Overload2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E4838273AAB80004031EE /* Overload2D.swift */; };
+		D43E483E273AAB80004031EE /* TriangleFormulae.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E4839273AAB80004031EE /* TriangleFormulae.swift */; };
+		D43E4843273AAB8B004031EE /* .overcommit.yml in Resources */ = {isa = PBXBuildFile; fileRef = D43E483F273AAB8B004031EE /* .overcommit.yml */; };
+		D43E4844273AAB8B004031EE /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = D43E4840273AAB8B004031EE /* .swiftlint.yml */; };
+		D43E4845273AAB8B004031EE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D43E4841273AAB8B004031EE /* .gitignore */; };
+		D43E4846273AAB8B004031EE /* swiftlint.sh in Resources */ = {isa = PBXBuildFile; fileRef = D43E4842273AAB8B004031EE /* swiftlint.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +37,15 @@
 		D43E482C273A5215004031EE /* ArenaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArenaView.swift; sourceTree = "<group>"; };
 		D43E4830273A55D3004031EE /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
 		D43E4832273A862A004031EE /* LayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerView.swift; sourceTree = "<group>"; };
+		D43E4835273AAB80004031EE /* GridPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridPoint.swift; sourceTree = "<group>"; };
+		D43E4836273AAB80004031EE /* Deque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deque.swift; sourceTree = "<group>"; };
+		D43E4837273AAB80004031EE /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D43E4838273AAB80004031EE /* Overload2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Overload2D.swift; sourceTree = "<group>"; };
+		D43E4839273AAB80004031EE /* TriangleFormulae.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleFormulae.swift; sourceTree = "<group>"; };
+		D43E483F273AAB8B004031EE /* .overcommit.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .overcommit.yml; sourceTree = "<group>"; };
+		D43E4840273AAB8B004031EE /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		D43E4841273AAB8B004031EE /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D43E4842273AAB8B004031EE /* swiftlint.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = swiftlint.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +62,10 @@
 		D43E480F273A5085004031EE = {
 			isa = PBXGroup;
 			children = (
+				D43E4841273AAB8B004031EE /* .gitignore */,
+				D43E483F273AAB8B004031EE /* .overcommit.yml */,
+				D43E4840273AAB8B004031EE /* .swiftlint.yml */,
+				D43E4842273AAB8B004031EE /* swiftlint.sh */,
 				D43E481A273A5085004031EE /* Claudia */,
 				D43E4819273A5085004031EE /* Products */,
 			);
@@ -60,12 +82,11 @@
 		D43E481A273A5085004031EE /* Claudia */ = {
 			isa = PBXGroup;
 			children = (
-				D43E482A273A50F5004031EE /* ArenaScene.swift */,
-				D43E482C273A5215004031EE /* ArenaView.swift */,
+				D43E4834273AAB80004031EE /* NutsNBolts */,
+				D43E4847273AABA2004031EE /* SpriteKit */,
+				D43E4848273AABBA004031EE /* Views */,
 				D43E481B273A5085004031EE /* ClaudiaApp.swift */,
-				D43E481D273A5085004031EE /* ContentView.swift */,
 				D43E4830273A55D3004031EE /* Layer.swift */,
-				D43E4832273A862A004031EE /* LayerView.swift */,
 				D43E481F273A5088004031EE /* Assets.xcassets */,
 				D43E4824273A5088004031EE /* Claudia.entitlements */,
 				D43E4821273A5088004031EE /* Preview Content */,
@@ -79,6 +100,36 @@
 				D43E4822273A5088004031EE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D43E4834273AAB80004031EE /* NutsNBolts */ = {
+			isa = PBXGroup;
+			children = (
+				D43E4835273AAB80004031EE /* GridPoint.swift */,
+				D43E4836273AAB80004031EE /* Deque.swift */,
+				D43E4837273AAB80004031EE /* Extensions.swift */,
+				D43E4838273AAB80004031EE /* Overload2D.swift */,
+				D43E4839273AAB80004031EE /* TriangleFormulae.swift */,
+			);
+			path = NutsNBolts;
+			sourceTree = "<group>";
+		};
+		D43E4847273AABA2004031EE /* SpriteKit */ = {
+			isa = PBXGroup;
+			children = (
+				D43E482A273A50F5004031EE /* ArenaScene.swift */,
+			);
+			path = SpriteKit;
+			sourceTree = "<group>";
+		};
+		D43E4848273AABBA004031EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D43E482C273A5215004031EE /* ArenaView.swift */,
+				D43E481D273A5085004031EE /* ContentView.swift */,
+				D43E4832273A862A004031EE /* LayerView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +190,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D43E4845273AAB8B004031EE /* .gitignore in Resources */,
+				D43E4846273AAB8B004031EE /* swiftlint.sh in Resources */,
+				D43E4844273AAB8B004031EE /* .swiftlint.yml in Resources */,
+				D43E4843273AAB8B004031EE /* .overcommit.yml in Resources */,
 				D43E4823273A5088004031EE /* Preview Assets.xcassets in Resources */,
 				D43E4820273A5088004031EE /* Assets.xcassets in Resources */,
 			);
@@ -152,11 +207,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D43E4833273A862A004031EE /* LayerView.swift in Sources */,
+				D43E483C273AAB80004031EE /* Extensions.swift in Sources */,
 				D43E482D273A5215004031EE /* ArenaView.swift in Sources */,
+				D43E483B273AAB80004031EE /* Deque.swift in Sources */,
+				D43E483E273AAB80004031EE /* TriangleFormulae.swift in Sources */,
 				D43E481E273A5085004031EE /* ContentView.swift in Sources */,
+				D43E483D273AAB80004031EE /* Overload2D.swift in Sources */,
 				D43E4831273A55D3004031EE /* Layer.swift in Sources */,
 				D43E481C273A5085004031EE /* ClaudiaApp.swift in Sources */,
 				D43E482B273A50F5004031EE /* ArenaScene.swift in Sources */,
+				D43E483A273AAB80004031EE /* GridPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
