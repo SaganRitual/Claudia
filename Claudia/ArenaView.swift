@@ -8,11 +8,11 @@ struct ArenaView: View {
 
     var body: some View {
         ZStack {
-            SpriteView(scene: scene).scaledToFit()
+            SpriteView(scene: scene)
+                .scaledToFit()
 
             ForEach(0..<scene.cLayers) { layerIx in
                 LayerView()
-                    .frame(width: 100, height: 100)
                     .environmentObject(scene.getLayer(layerIx))
             }
         }

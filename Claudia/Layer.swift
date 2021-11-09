@@ -5,10 +5,10 @@ import SpriteKit
 class Layer: ObservableObject {
     let ring: SKShapeNode
 
-    init(parentSKNode: SKNode) {
-        ring = SKShapeNode(circleOfRadius: 50)
-        ring.strokeColor = .white
-        ring.fillColor = .purple
+    init(parentSKNode: SKNode, color: SKColor, radius: Double) {
+        ring = SKShapeNode(circleOfRadius: 0.5 * radius * parentSKNode.frame.width)
+        ring.strokeColor = color
+        ring.fillColor = .clear
 
         parentSKNode.addChild(ring)
     }

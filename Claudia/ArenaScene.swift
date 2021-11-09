@@ -3,11 +3,19 @@
 import SpriteKit
 
 class ArenaScene: SKScene, ObservableObject {
-    @Published var cLayers = 2
+    @Published var cLayers = 5
     @Published var layers = [Layer]()
 
+    @Published var radiusFractions: [Double] = [
+        1.0, 0.5, 0.5, 0.5, 0.5
+    ]
+
+    private let colors: [SKColor] = [
+        .cyan, .magenta, .yellow, .red, .green
+    ]
+
     override init() {
-        super.init(size: CGSize(width: 500, height: 500))
+        super.init(size: ClaudiaApp.screenDimensions)
         anchorPoint = CGPoint(x: 0.5, y: 0.5)
     }
 
@@ -16,7 +24,15 @@ class ArenaScene: SKScene, ObservableObject {
     }
 
     func addLayer() -> Layer {
-        layers.append(Layer(parentSKNode: layers.last?.ring ?? self))
+        layers.append(
+            Layer(
+                parentSKNode: layers.last?.ring ?? self,
+                color: colors[layers.count],
+                radius: radiusFractions[layers.count]
+            )
+        )
+
+        cLayers = max(cLayers, layers.count)
         return layers.last!
     }
 
