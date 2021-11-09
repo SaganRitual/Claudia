@@ -11,6 +11,10 @@
 		D43E481E273A5085004031EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E481D273A5085004031EE /* ContentView.swift */; };
 		D43E4820273A5088004031EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D43E481F273A5088004031EE /* Assets.xcassets */; };
 		D43E4823273A5088004031EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D43E4822273A5088004031EE /* Preview Assets.xcassets */; };
+		D43E482B273A50F5004031EE /* ArenaScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E482A273A50F5004031EE /* ArenaScene.swift */; };
+		D43E482D273A5215004031EE /* ArenaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E482C273A5215004031EE /* ArenaView.swift */; };
+		D43E4831273A55D3004031EE /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E4830273A55D3004031EE /* Layer.swift */; };
+		D43E4833273A862A004031EE /* LayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E4832273A862A004031EE /* LayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		D43E481F273A5088004031EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D43E4822273A5088004031EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D43E4824273A5088004031EE /* Claudia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Claudia.entitlements; sourceTree = "<group>"; };
+		D43E482A273A50F5004031EE /* ArenaScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArenaScene.swift; sourceTree = "<group>"; };
+		D43E482C273A5215004031EE /* ArenaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArenaView.swift; sourceTree = "<group>"; };
+		D43E4830273A55D3004031EE /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
+		D43E4832273A862A004031EE /* LayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +60,12 @@
 		D43E481A273A5085004031EE /* Claudia */ = {
 			isa = PBXGroup;
 			children = (
+				D43E482A273A50F5004031EE /* ArenaScene.swift */,
+				D43E482C273A5215004031EE /* ArenaView.swift */,
 				D43E481B273A5085004031EE /* ClaudiaApp.swift */,
 				D43E481D273A5085004031EE /* ContentView.swift */,
+				D43E4830273A55D3004031EE /* Layer.swift */,
+				D43E4832273A862A004031EE /* LayerView.swift */,
 				D43E481F273A5088004031EE /* Assets.xcassets */,
 				D43E4824273A5088004031EE /* Claudia.entitlements */,
 				D43E4821273A5088004031EE /* Preview Content */,
@@ -139,8 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D43E4833273A862A004031EE /* LayerView.swift in Sources */,
+				D43E482D273A5215004031EE /* ArenaView.swift in Sources */,
 				D43E481E273A5085004031EE /* ContentView.swift in Sources */,
+				D43E4831273A55D3004031EE /* Layer.swift in Sources */,
 				D43E481C273A5085004031EE /* ClaudiaApp.swift in Sources */,
+				D43E482B273A50F5004031EE /* ArenaScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +284,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Claudia/Claudia.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -295,6 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Claudia/Claudia.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;

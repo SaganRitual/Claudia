@@ -1,11 +1,11 @@
 // We are a way for the cosmos to know itself. -- C. Sagan
 
+import SpriteKit
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ArenaView()
     }
 }
 
